@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -16,6 +17,13 @@ const Home: NextPage = () => {
         <header className={styles.title}>
           <p className={styles.titleStyle}>Goat Money </p>
         </header>
+
+        <Image
+          src="/png1.png"
+          width={400}
+          height={400}
+          />
+
 
         <p className={styles.description}>
           The next generation memecoin on Avalanche Network

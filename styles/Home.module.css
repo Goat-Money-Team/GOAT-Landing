@@ -2,7 +2,7 @@
   min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
-  background-color: #e74141;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -43,7 +43,8 @@
 }
 
 .titleStyle{
-  color: white;
+  color: #e74141;
+  font-family: monospace;
 }
 
 .title,
