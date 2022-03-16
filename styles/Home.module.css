@@ -1,11 +1,8 @@
-.container {
-  padding: 0 2rem;
-}
-
 .main {
   min-height: 100vh;
   padding: 4rem 0;
   flex: 1;
+  background-color: #e74141;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,7 +26,7 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: white;
   text-decoration: none;
 }
 
@@ -45,6 +42,10 @@
   font-size: 4rem;
 }
 
+.titleStyle{
+  color: white;
+}
+
 .title,
 .description {
   text-align: center;
@@ -53,6 +54,7 @@
 .description {
   margin: 4rem 0;
   line-height: 1.5;
+  padding: 0.2rem;
   font-size: 1.5rem;
 }
 
@@ -66,11 +68,8 @@
 }
 
 .grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
   max-width: 800px;
+  display: flex;
 }
 
 .card {
