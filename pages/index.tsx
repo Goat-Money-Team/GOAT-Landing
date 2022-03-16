@@ -14,7 +14,7 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <header className={styles.title}>
-          <p className={styles.titleStyle}>Goat Money</p>
+          <p className={styles.titleStyle}>Goat Money </p>
         </header>
 
         <p className={styles.description}>
