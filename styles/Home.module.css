@@ -69,8 +69,16 @@
 }
 
 .grid {
-  max-width: 800px;
+  max-width: 900px;
   display: flex;
+}
+
+.button{
+  background-color: #e74141;
+  color: white;
+  height: 50px;
+  width: 100px;
+  border-color: white;
 }
 
 .card {
