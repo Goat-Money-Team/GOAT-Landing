@@ -1,21 +1,20 @@
 import { FC } from "react";
 import styles from '../../styles/Home.module.css'
+import {ButtonGroup , Button} from '@material-ui/core/';
+
 
 const Footer: FC = () => {
-
     return (
         <>
            <div className={styles.grid}>
-                <p>
-                    <button className={styles.button}>Goat Docs</button>
-                </p> 
-                <p>
-                    <button className={styles.button}>Mainnet Soon</button>
-                </p>
+                <Button >Goat Docs</Button>
+                <Button >Mainnet Soon</Button>
+                <Button >Telegram</Button>
+                <Button >Discord</Button>
+                <Button >Twitter</Button>
             </div>
         </>
     );
-
 }
 
 export default Footer;
