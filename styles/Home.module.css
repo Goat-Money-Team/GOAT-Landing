@@ -1,21 +1,45 @@
 .main {
   min-height: 100vh;
-  padding: 4rem 0;
+  padding: 0.4rem 0.4rem;
   flex: 1;
-  background-color: #e74141;
+  background-color: #C31D28;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
 }
-
+.icon{
+  margin: 1.7rem;
+  line-height: 1.5;
+  padding: 0rem;
+  height: 4rem;
+  width: 4rem;
+}
 .footer {
   display: flex;
   flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
+  padding: 0.1rem 0;
+  border-top: 2px solid #0C0910;
+  justify-content: bottom;
   align-items: center;
+  width:100%;
+  margin-top:9rem;
+}
+.footer,
+.ftext {
+  justify-content: center;
+  text-align: center;
+  color: #0C0910;
+  font-family: "Altone trial";
+}
+
+.ftext {
+  padding: 0.2rem;
+  font-size: 0.5rem;
+  height: 0px;
+  margin: 0rem;
 }
 
 .footer a {
@@ -23,10 +47,14 @@
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  height: 5rem;
 }
-
+@font-face {
+  font-family: 'Altone trial';
+  src: url('../public/font/AltoneTrial-Bold.ttf');
+}
 .title a {
-  color: white;
+  color: #E9E3E6;
   text-decoration: none;
 }
 
@@ -38,37 +66,75 @@
 
 .title {
   margin: 0;
+  margin-bottom:-2;
   line-height: 1.15;
   font-size: 4rem;
+  height: 10rem
+}
+.title2 {
+  margin: 2rem ;
+  line-height: 1.5;
+  padding: 0.1rem;
+  font-size: 2rem;
+  height: 0.5rem;
+  text-align: center;
+  font-family: "Altone trial";
+  color: #0C0910;
+  
+}
+.title2:hover{
+  text-decoration: underline #C9AC2C;
 }
 
 .titleStyle{
-  color: white;
+  color: #E9E3E6;
+  font-family: "Altone trial";
+  margin-top: 1rem;
 }
 
 .title,
 .description {
   text-align: center;
+  color: #E9E3E6;
+  font-family: "Altone trial";
 }
 
 .description {
-  margin: 4rem 0;
+  margin: 1rem 0;
   line-height: 1.5;
   padding: 0.2rem;
   font-size: 1.5rem;
 }
 
 .code {
-  background: #fafafa;
+  background: #0C0910;
   border-radius: 5px;
   padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  font-size: 1.6rem;
+  font-family: "Altone trial";
 }
-
+.button { 
+  line-height: 1.5;
+  padding: 0.25rem;
+  border: 0.0rem solid #0C0910;
+  border-radius: 3rem;
+  background-color: #C31D28;
+  height: 4rem;
+  width: 4rem;
+}
+.button:hover {
+  background-color:#C9AC2C;
+  transition: 0.4s;
+}
 .grid {
   max-width: 800px;
+  max-height: fit-content;
+  display: flex;
+}
+
+.grid2 {
+  width: max-content;
+  max-height: fit-content;
   display: flex;
 }
 
@@ -78,7 +144,7 @@
   text-align: left;
   color: inherit;
   text-decoration: none;
-  border: 1px solid #eaeaea;
+  border: 1px solid #E9E3E6;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
   max-width: 300px;
@@ -106,10 +172,539 @@
   height: 1em;
   margin-left: 0.5rem;
 }
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
+/* / Tablets en horizonal y escritorios normales
+   ------------------------------------------------------------------------- / */
+@media (min-width: 767px) and (max-width: 1199px) { 
+  .main {
+    min-height: 100vh;
+    padding: 0.4rem 0.4rem;
+    flex: 1;
+    background-color: #C31D28;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
   }
-}
+  .icon{
+    margin: 1.7rem;
+    line-height: 1.5;
+    padding: 0rem;
+    height: 4rem;
+    width: 4rem;
+  }
+  .footer {
+    display: flex;
+    flex: 1;
+    padding: 0.1rem 0;
+    border-top: 2px solid #0C0910;
+    justify-content: bottom;
+    align-items: center;
+    width:100%;
+    margin-top:9rem;  }
+  .footer,
+  .ftext {
+    justify-content: center;
+    text-align: center;
+    color: #0C0910;
+    font-family: "Altone trial";
+  }
+  
+  .ftext {
+    padding: 0.2rem;
+    font-size: 0.5rem;
+    height: 0px;
+    margin: 0rem;
+  }
+  
+  .footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    height: 5rem;
+  }
+  @font-face {
+    font-family: 'Altone trial';
+    src: url('../public/font/AltoneTrial-Bold.ttf');
+  }
+  .title a {
+    color: #E9E3E6;
+    text-decoration: none;
+  }
+  
+  .title a:hover,
+  .title a:focus,
+  .title a:active {
+    text-decoration: underline;
+  }
+  
+  .title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 4rem;
+    height: 10rem
+  }
+  .title2 {
+    margin: 2rem ;
+    line-height: 1.5;
+    padding: 0.1rem;
+    font-size: 2rem;
+    height: 0.5rem;
+    text-align: center;
+    font-family: "Altone trial";
+    color: #0C0910;
+    
+  }
+  .title2:hover{
+    text-decoration: underline #C9AC2C;
+  }
+  
+  .titleStyle{
+    color: #E9E3E6;
+    font-family: "Altone trial";
+    margin-top: 1rem;
+  }
+  
+  .title,
+  .description {
+    text-align: center;
+    color: #E9E3E6;
+    font-family: "Altone trial";
+  }
+  
+  .description {
+    margin: 1rem 0;
+    line-height: 1.5;
+    padding: 0.2rem;
+    font-size: 1.5rem;
+  }
+  
+  .code {
+    background: #0C0910;
+    border-radius: 5px;
+    padding: 0.75rem;
+    font-size: 1.6rem;
+    font-family: "Altone trial";
+  }
+  .button { 
+    line-height: 1.5;
+    padding: 0.25rem;
+    border: 0.0rem solid #0C0910;
+    border-radius: 3rem;
+    background-color: #C31D28;
+    height: 4rem;
+    width: 4rem;
+  }
+  .button:hover {
+    background-color:#C9AC2C;
+    transition: 0.4s;
+  }
+  .grid {
+    max-width: 800px;
+    max-height: fit-content;
+    display: flex;
+  }
+  
+  .grid2 {
+    width: max-content;
+    max-height: fit-content;
+    display: flex;
+  }
+  
+  .card {
+    margin: 1rem;
+    padding: 1.5rem;
+    text-align: left;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid #E9E3E6;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    max-width: 300px;
+  }
+  
+  .card:hover,
+  .card:focus,
+  .card:active {
+    color: #0070f3;
+    border-color: #0070f3;
+  }
+  
+  .card h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.5rem;
+  }
+  
+  .card p {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+  
+  .logo {
+    height: 1em;
+    margin-left: 0.5rem;
+  }}
+/* Móviles en horizontal o tablets en vertical
+  -------------------------------------------------------------------------  */
+   @media (max-width: 768px) { 
+    .main {
+      min-height: 100vh;
+      padding: 0.4rem 0.4rem;
+      flex: 1;
+      background-color: #C31D28;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+    .icon{
+      margin: 1.7rem;
+      line-height: 1.5;
+      padding: 0rem;
+      height: 4rem;
+      width: 4rem;
+    }
+    .footer {
+      display: flex;
+      flex: 1;
+      padding: 0.1rem 0;
+      border-top: 2px solid #0C0910;
+      justify-content: bottom;
+      align-items: center;
+      width:100%;
+      margin-top:9rem;    }
+    .footer,
+    .ftext {
+      justify-content: center;
+      text-align: center;
+      color: #0C0910;
+      font-family: "Altone trial";
+    }
+    
+    .ftext {
+      padding: 0.2rem;
+      font-size: 0.5rem;
+      height: 0px;
+      margin: 0rem;
+    }
+    
+    .footer a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+      height: 5rem;
+    }
+    @font-face {
+      font-family: 'Altone trial';
+      src: url('../public/font/AltoneTrial-Bold.ttf');
+    }
+    .title a {
+      color: #E9E3E6;
+      text-decoration: none;
+    }
+    
+    .title a:hover,
+    .title a:focus,
+    .title a:active {
+      text-decoration: underline;
+    }
+    
+    .title {
+      margin: 0;
+      margin-top: -1rem;
+      line-height: 1.15;
+      font-size: 4rem;
+      height: 10rem
+    }
+    .title2 {
+      margin: 2rem ;
+      line-height: 1.5;
+      padding: 0.1rem;
+      font-size: 2rem;
+      height: 0.5rem;
+      text-align: center;
+      font-family: "Altone trial";
+      color: #0C0910;
+      
+    }
+    .title2:hover{
+      text-decoration: underline #C9AC2C;
+    }
+    
+    .titleStyle{
+      color: #E9E3E6;
+      font-family: "Altone trial";
+      margin-top: 1rem;
+    }
+    
+    .title,
+    .description {
+      text-align: center;
+      color: #E9E3E6;
+      font-family: "Altone trial";
+    }
+    
+    .description {
+      margin: 1rem 0;
+      line-height: 1.5;
+      padding: 0.2rem;
+      font-size: 1.5rem;
+    }
+    
+    .code {
+      background: #0C0910;
+      border-radius: 5px;
+      padding: 0.75rem;
+      font-size: 1.6rem;
+      font-family: "Altone trial";
+    }
+    .button { 
+      line-height: 1.5;
+      padding: 0.25rem;
+      border: 0.0rem solid #0C0910;
+      border-radius: 3rem;
+      background-color: #C31D28;
+      height: 4rem;
+      width: 4rem;
+    }
+    .button:hover {
+      background-color:#C9AC2C;
+      transition: 0.4s;
+    }
+    .grid {
+      max-width: 800px;
+      max-height: fit-content;
+      display: flex;
+    }
+    
+    .grid2 {
+      width: max-content;
+      max-height: fit-content;
+      display: flex;
+    }
+    
+    .card {
+      margin: 1rem;
+      padding: 1.5rem;
+      text-align: left;
+      color: inherit;
+      text-decoration: none;
+      border: 1px solid #E9E3E6;
+      border-radius: 10px;
+      transition: color 0.15s ease, border-color 0.15s ease;
+      max-width: 300px;
+    }
+    
+    .card:hover,
+    .card:focus,
+    .card:active {
+      color: #0070f3;
+      border-color: #0070f3;
+    }
+    
+    .card h2 {
+      margin: 0 0 1rem 0;
+      font-size: 1.5rem;
+    }
+    
+    .card p {
+      margin: 0;
+      font-size: 1.25rem;
+      line-height: 1.5;
+    }
+    
+    .logo {
+      height: 1em;
+      margin-left: 0.5rem;
+    }
+  }
+    
+/* / Móviles en vertical
+  ------------------------------------------------------------------------- */
+    @media (max-width: 480px) { 
+      .main {
+      min-height: 100vh;
+      padding: 0.4rem 0.4rem;
+      flex: 1;
+      background-color: #C31D28;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+    .icon{
+      margin: 1.7rem;
+      line-height: 1.5;
+      padding: 0rem;
+      height: 4rem;
+      width: 4rem;
+    }
+    .footer {
+      display: flex;
+      flex: 1;
+      padding: 0.1rem 0;
+      border-top: 2px solid #0C0910;
+      justify-content: bottom;
+      align-items: center;
+      width:100%;
+      margin-top: 6rem;
+    }
+    .footer,
+    .ftext {
+      justify-content: center;
+      text-align: center;
+      color: #0C0910;
+      font-family: "Altone trial";
+      
+    }
+    
+    .ftext {
+      padding: 0.2rem;
+      font-size: 0.5rem;
+      height: 0px;
+      margin: 0rem;
+    }
+    
+    .footer a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
+      height: 5rem;
+    }
+    @font-face {
+      font-family: 'Altone trial';
+      src: url('../public/font/AltoneTrial-Bold.ttf');
+    }
+    .title a {
+      color: #E9E3E6;
+      text-decoration: none;
+    }
+    
+    .title a:hover,
+    .title a:focus,
+    .title a:active {
+      text-decoration: underline;
+    }
+    
+    .title {
+      margin: 0;
+      line-height: 1.15;
+      font-size: 4rem;
+      height: 10rem;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+    .title2 {
+      margin: 2rem ;
+      line-height: 1.5;
+      padding: 0.1rem;
+      font-size: 2rem;
+      height: 0.5rem;
+      text-align: center;
+      font-family: "Altone trial";
+      color: #0C0910;
+      
+    }
+    .title2:hover{
+      text-decoration: underline #C9AC2C;
+    }
+    
+    .titleStyle{
+      color: #E9E3E6;
+      font-family: "Altone trial";
+      margin-top: 1rem;
+    }
+    
+    .title,
+    .description {
+      text-align: center;
+      color: #E9E3E6;
+      font-family: "Altone trial";
+    
+    }
+    
+    .description {
+      margin: 1rem 0;
+      line-height: 1.5;
+      padding: 0.2rem;
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+    }
+    
+    .code {
+      background: #0C0910;
+      border-radius: 5px;
+      padding: 0.75rem;
+      font-size: 1.6rem;
+      font-family: "Altone trial";
+    }
+    .button { 
+      line-height: 1.5;
+      padding: 0.25rem;
+      border: 0.0rem solid #0C0910;
+      border-radius: 3rem;
+      background-color: #C31D28;
+      height: 4rem;
+      width: 4rem;
+    }
+    .button:hover {
+      background-color:#C9AC2C;
+      transition: 0.4s;
+    }
+    .grid {
+      max-width: 800px;
+      max-height: fit-content;
+      display: flex;
+    }
+    
+    .grid2 {
+      width: max-content;
+      max-height: fit-content;
+      display: flex;
+    }
+    
+    .card {
+      margin: 1rem;
+      padding: 1.5rem;
+      text-align: left;
+      color: inherit;
+      text-decoration: none;
+      border: 1px solid #E9E3E6;
+      border-radius: 10px;
+      transition: color 0.15s ease, border-color 0.15s ease;
+      max-width: 300px;
+    }
+    
+    .card:hover,
+    .card:focus,
+    .card:active {
+      color: #0070f3;
+      border-color: #0070f3;
+    }
+    
+    .card h2 {
+      margin: 0 0 1rem 0;
+      font-size: 1.5rem;
+    }
+    
+    .card p {
+      margin: 0;
+      font-size: 1.25rem;
+      line-height: 1.5;
+    }
+    
+    .logo {
+      height: 1em;
+      margin-left: 0.5rem;
+    }
+  }

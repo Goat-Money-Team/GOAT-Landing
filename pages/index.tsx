@@ -1,7 +1,15 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from "next/link"
 import styles from '../styles/Home.module.css'
+import Logo from "../DEFINITIVOOO.png"
+import Tg from "../public/socials/telegram.svg"
+import Tw from "../public/socials/twitter (1).svg"
+import Ds from "../public/socials/discord.svg"
+import Timer from "../pages/src/renderTimer"
+import "animate.css"
+ //import Part from "../src/particles"
 
 const Home: NextPage = () => {
   return (
@@ -12,69 +20,70 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main className={styles.main}>  
+      {/* <Part><Part/> */}
         <header className={styles.title}>
-          <p className={styles.titleStyle}>Goat Money </p>
+          <p id ="title" className={styles.titleStyle}>GOAT MONEY </p>
         </header>
-
-        <p className={styles.description}>
-          The next generation memecoin on Avalanche Network
-        </p>
-
+        
+        <div className={'image-container'}>
+          <Image 
+            layout="responsive" 
+            className={'image'}
+            src= {Logo} 
+            alt=" GOAT Logo" 
+            priority></Image></div>
+        <h1 className={styles.description}>
+          The next generation Avalanche memecoin.
+        </h1>
+        <Timer></Timer>
         <div className={styles.grid}>
-      
-          <p className={styles.description}>
-            <code className={styles.code}>Goat Docs</code>
-          </p>
-          
-          <p className={styles.description}>
-            <code className={styles.code}>Mainnet Soon</code>
-          </p>
+            <button type= "button" className="button" ><a target="_blank" rel="noreferrer noopener" href= "https://one-eyed-bandit.gitbook.io/goat-money/">Docs</a> </button>
+            <button className="button button2" disabled ><a target="_blank" rel="noreferrer noopener">DApp Soon</a></button>
+        </div>
+        <a className= "animate__animated animate__jackInTheBox animate__delay-2s	2s" target="_blank" rel="noreferrer noopener" href= "https://linktr.ee/GoatMoney">Join our community!</a>
+        <div className= {styles.grid2}>
+          <h1 className={styles.icon}>
+            <button className= {styles.button}><a target="_blank" rel="noreferrer noopener" href= "https://t.me/+N-FoJXd372UzMDVh">
+              <Image 
+            src= {Tg} 
+            alt="Telegram" 
+            layout="responsive" 
+            className={styles.icon}>
+            </Image>
+            </a>
+            </button>
+          </h1>
+          <h1 className={styles.icon}>
+            <button className= {styles.button}><a target="_blank" rel="noreferrer noopener" href= "https://twitter.com/GoatMoneyToken?s=20">
+            <Image 
+              src= {Tw} 
+              alt="Twitter" 
+              layout="responsive" 
+              className={styles.icon}>
+              </Image>
+              </a>
+              </button>
+          </h1>
+          <h1 className={styles.icon}>
+            <button className= {styles.button} ><a target="_blank" rel="noreferrer noopener" href="https://discord.gg/BSkmZGQeM5">
+            <Image 
+              src= {Ds} 
+              alt="Discord" 
+              layout="responsive" 
+            className={styles.icon}>
+              </Image></a>
+              </button>
+          </h1>
 
         </div>
 
-          {/* <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a> */}
-        
+          <footer className={styles.footer}>
+          <p className= {styles.ftext}>Bringed to you with love by Patagonia Labs</p>
+            </footer>
       </main>
-
-      {/* <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer> */}
+  
+      
     </div>
   )
 }

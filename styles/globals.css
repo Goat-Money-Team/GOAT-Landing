@@ -1,11 +1,323 @@
-html,
+html,body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family:"AltoneTrial-Bold";
+}
+@font-face {
+  font-family: 'Altone trial'; 
+  src: url('../public/font/AltoneTrial-Bold.ttf'); 
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.image-container {
+
+  width: 20rem;
+  height: 21rem;
+
+ } div {
+    position: relative !important;
+  }
+
+.image {
+    object-fit: cover;
+    width: 100% !important;
+    position: absolute !important;
+    height: 100% !important;
+  }
+* {
+  box-sizing: border-box;
+}
+.expired-notice {
+  text-align: center;
+  font-family: 'Altone trial';
+  padding: 6rem;
+  border: 1px solid #E9E3E6;
+  border-radius: 0.25rem;
+  margin: 1.5rem;
+}
+
+.expired-notice > span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #E9E3E6;
+  font-family: 'Altone trial';
+}
+
+.expired-notice > p {
+  font-size: 1rem;
+  font-family: 'Altone trial';
+}
+
+.show-counter {
+  padding: 0.5rem;
+}
+.date-time-display{
+  font-family: "Altone trial";
+  color: #000000;
+  font-size: 2.3rem;
+  padding: 0.2rem;
+}
+.time-display2{
+  padding: 0.3rem;
+  text-align: bottom;
+  font-family: "Altone trial";
+  color: #000000;
+  font-size: 0.1rem;
+}
+.show-counter .countdown-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  padding: 0.5rem;
+  border: 0.3rem groove #E9E3E6;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  color: #000;
+  width: 40rem;
+  height: 8rem;
+}
+.image{
+  display:flex;
+  flex: 1;
+}
+.button { 
+  margin: 0.5rem;
+  line-height: 1.5;
+  padding: 0.2rem;
+  font-size: 1.5rem;
+  border: 0.2rem solid #0C0910;
+  border-radius: 0.25rem;
+  text-align: center;
+  background-color:#0C0910 ;
+  color: #C31D28;
+  font-family: "Altone trial";
+  height: 3rem
+}
+.animate__jackInTheBox{
+  margin: 2rem ;
+  margin-top: 5.5rem;
+  line-height: 1.5;
+  padding: 0.1rem;
+  font-size: 2rem;
+  height: 0.5rem;
+  text-align: center;
+  font-family: "Altone trial";
+  color: #0C0910;
+}
+.animate__jackInTheBox:hover{
+  color: #C9AC2C;
+}
+.button2{
+  background-color: #333333;
+  border: 0.2rem solid #333333;
+}
+.button:hover:not([disabled]) {
+  background-color:#E9E3E6;
+  transition: 0.5s;
+}
+.show-counter .countdown {
+  line-height: 1.25rem;
+  padding: 1rem 0.75rem 1rem 0.75rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Altone trial";
+  color: #000000;
+  font-size: 2.3rem;
+}
+
+.show-counter .countdown.danger {
+  color: #C9AC2C;
+}
+
+.show-counter .countdown > p {
+  margin: 0.2rem;
+}
+
+.show-counter .countdown > span {
+  text-transform: uppercase;
+  font-family: "Altone trial";
+  color: #000000;
+  font-size: 1.3rem;
+  line-height: 1rem;
+}
+
+/* / Tablets en horizonal y escritorios normales
+   ------------------------------------------------------------------------- / */
+@media (min-width: 768px) and (max-width: 1199px) { 
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family:"AltoneTrial-Bold";
+  height: 100%;
+  width: 100%;
+}
+.image-container {
+
+  width: 20rem;
+  height: 21rem;
+
+ } div {
+    position: relative !important;
+  }
+
+.image {
+    object-fit: cover;
+    width: 100% !important;
+    position: absolute !important;
+    height: 100% !important;
+  }
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Altone trial'; 
+  src: url('../public/font/AltoneTrial-Bold.ttf'); 
+}
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
+* {
+  box-sizing: border-box;
+  
+}
+.expired-notice {
+  text-align: center;
+  font-family: Altone;
+  padding: 2rem;
+  border: 1px solid #ebebeb;
+  border-radius: 0.25rem;
+  margin: 0.5rem;
+}
+
+.expired-notice > span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #C31D28;
+}
+
+.expired-notice > p {
+  font-size: 1.5rem;
+}
+
+.show-counter {
+  padding: 0.5rem;
+}
+.date-time-display{
+  font-family: "Altone trial";
+  color: #000000;
+  font-size: 2.3rem;
+  padding: 0.2rem;
+}
+.time-display2{
+  padding: 0.3rem;
+  text-align: bottom;
+  font-family: "Altone trial";
+  color: #000000;
+  font-size: 0.1rem;
+}
+.show-counter .countdown-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  padding: 0.5rem;
+  border: 0.3rem solid #E9E3E6;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  color: #000;
+  width: 40rem;
+  height: 8rem;
+}
+.button { 
+  margin: 0.5rem;
+  line-height: 1.5;
+  padding: 0.2rem;
+  font-size: 1.5rem;
+  border: 0.2rem solid #0C0910;
+  border-radius: 0.25rem;
+  text-align: center;
+  background-color:#0C0910 ;
+  color: #C31D28;
+  font-family: "Altone trial";
+  height: 3rem
+}
+.animate__jackInTheBox{
+  margin: 2rem ;
+  margin-top: 5.5rem;
+  line-height: 1.5;
+  padding: 0.1rem;
+  font-size: 2rem;
+  height: 0.5rem;
+  text-align: center;
+  font-family: "Altone trial";
+  color: #0C0910;
+}
+.animate__jackInTheBox:hover{
+  color: #C9AC2C;
+}
+.button2{
+  background-color: #333333;
+  border: 0.2rem solid #333333;
+}
+.button:hover:not([disabled]) {
+  background-color:#E9E3E6;
+  transition: 0.5s;
+}
+.show-counter .countdown {
+  line-height: 1.25rem;
+  padding: 1rem 0.75rem 1rem 0.75rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Altone trial";
+  color: #000000;
+  font-size: 2.3rem;
+}
+
+.show-counter .countdown.danger {
+  color: #C9AC2C;
+}
+
+.show-counter .countdown > p {
+  margin: 0.2rem;
+}
+
+.show-counter .countdown > span {
+  text-transform: uppercase;
+  font-family: "Altone trial";
+  color: #000000;
+  font-size: 1.3rem;
+  line-height: 1rem;
+} }
+ 
+ /* Móviles en horizontal o tablets en vertical
+   -------------------------------------------------------------------------  */
+@media (max-width: 767px) { 
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family:"AltoneTrial-Bold";
+  }
+@font-face {
+  font-family: 'Altone trial'; 
+  src: url('../public/font/AltoneTrial-Bold.ttf'); 
+}
 a {
   color: inherit;
   text-decoration: none;
@@ -14,3 +326,270 @@ a {
 * {
   box-sizing: border-box;
 }
+.expired-notice {
+  text-align: center;
+  font-family: Altone;
+  padding: 2rem;
+  border: 1px solid #ebebeb;
+  border-radius: 0.25rem;
+  margin: 0.5rem;
+}
+
+.expired-notice > span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #C31D28;
+}
+
+.expired-notice > p {
+  font-size: 1.5rem;
+}
+
+.show-counter {
+  padding: 0.5rem;
+}
+.date-time-display{
+  font-family: "Altone trial";
+  color: #000000;
+  font-size: 2.3rem;
+  padding: 0.2rem;
+}
+.time-display2{
+  padding: 0.3rem;
+  text-align: bottom;
+  font-family: "Altone trial";
+  color: #000000;
+  font-size: 0.1rem;
+}
+.show-counter .countdown-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  padding: 0.5rem;
+  border: 0.3rem solid #E9E3E6;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  color: #000;
+  width: 40rem;
+  height: 8rem;
+}
+.button { 
+  margin: 0.5rem;
+  line-height: 1.5;
+  padding: 0.2rem;
+  font-size: 1.5rem;
+  border: 0.2rem solid #0C0910;
+  border-radius: 0.25rem;
+  text-align: center;
+  background-color:#0C0910 ;
+  color: #C31D28;
+  font-family: "Altone trial";
+  height: 3rem
+}
+.animate__jackInTheBox{
+  margin: 2rem ;
+  line-height: 1.5;
+  padding: 0.1rem;
+  font-size: 2rem;
+  height: 0.5rem;
+  text-align: center;
+  font-family: "Altone trial";
+  color: #0C0910;
+}
+.animate__jackInTheBox:hover{
+  color: #C9AC2C;
+}
+.button2{
+  background-color: #333333;
+  border: 0.2rem solid #333333;
+}
+.button:hover:not([disabled]) {
+  background-color:#E9E3E6;
+  transition: 0.5s;
+}
+.show-counter .countdown {
+  line-height: 1.25rem;
+  padding: 1rem 0.75rem 1rem 0.75rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: "Altone trial";
+  color: #000000;
+  font-size: 2.3rem;
+}
+
+.show-counter .countdown.danger {
+  color: #C9AC2C;
+}
+
+.show-counter .countdown > p {
+  margin: 0.2rem;
+}
+
+.show-counter .countdown > span {
+  text-transform: uppercase;
+  font-family: "Altone trial";
+  color: #000000;
+  font-size: 1.3rem;
+  line-height: 1rem;
+}}
+
+/* / Móviles en vertical
+   ------------------------------------------------------------------------- */
+@media (max-width: 480px) { 
+  body {
+    padding: 0;
+    margin: 0;
+    font-family:"AltoneTrial-Bold";
+    height: 100%;
+    width: 100%;
+  }
+  .image-container {
+  
+    width: 20rem;
+    height: 21rem;
+  
+   } div {
+      position: relative !important;
+    }
+  
+  .image {
+      object-fit: cover;
+      width: 100% !important;
+      position: absolute !important;
+      height: 100% !important;
+    }
+  * {
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family: 'Altone trial'; 
+    src: url('../public/font/AltoneTrial-Bold.ttf'); 
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  * {
+    box-sizing: border-box;
+    
+  }
+  .expired-notice {
+    text-align: center;
+    font-family: Altone;
+    padding: 2rem;
+    border: 1px solid #ebebeb;
+    border-radius: 0.25rem;
+    margin: 0.5rem;
+  }
+  
+  .expired-notice > span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #C31D28;
+  }
+  
+  .expired-notice > p {
+    font-size: 1.5rem;
+  }
+  
+  .show-counter {
+    padding: 0.5rem;
+  }
+  .date-time-display{
+    font-family: "Altone trial";
+    color: #000000;
+    font-size: 2.3rem;
+    padding: 0.2rem;
+  }
+  .time-display2{
+    padding: 0.3rem;
+    text-align: bottom;
+    font-family: "Altone trial";
+    color: #000000;
+    font-size: 0.1rem;
+  }
+  .show-counter .countdown-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    padding: 0.5rem;
+    border: 0.3rem solid #E9E3E6;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    color: #000;
+    width: 40rem;
+    height: 8rem;
+  }
+  .button { 
+    margin: 0.5rem;
+    line-height: 1.5;
+    padding: 0.2rem;
+    font-size: 1.5rem;
+    border: 0.2rem solid #0C0910;
+    border-radius: 0.25rem;
+    text-align: center;
+    background-color:#0C0910 ;
+    color: #C31D28;
+    font-family: "Altone trial";
+    height: 3rem
+  }
+  .animate__jackInTheBox{
+    margin: 2rem ;
+    margin-top: 5.5rem;
+    margin-bottom: 5rem;
+    line-height: 1.5;
+    padding: 0.1rem;
+    font-size: 2rem;
+    height: 0.5rem;
+    text-align: center;
+    font-family: "Altone trial";
+    color: #0C0910;
+  }
+  .animate__jackInTheBox:hover{
+    color: #C9AC2C;
+  }
+  .button2{
+    background-color: #333333;
+    border: 0.2rem solid #333333;
+  }
+  .button:hover:not([disabled]) {
+    background-color:#E9E3E6;
+    transition: 0.5s;
+  }
+  .show-counter .countdown {
+    line-height: 1.25rem;
+    padding: 1rem 0.75rem 1rem 0.75rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "Altone trial";
+    color: #000000;
+    font-size: 2.3rem;
+  }
+  
+  .show-counter .countdown.danger {
+    color: #C9AC2C;
+  }
+  
+  .show-counter .countdown > p {
+    margin: 0.2rem;
+  }
+  
+  .show-counter .countdown > span {
+    text-transform: uppercase;
+    font-family: "Altone trial";
+    color: #000000;
+    font-size: 1.3rem;
+    line-height: 1rem;
+  } }
+
