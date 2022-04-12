@@ -36,53 +36,54 @@ const Home: NextPage = () => {
         <h1 className={styles.description}>
           The next generation Avalanche memecoin.
         </h1>
-        <Timer></Timer>
+        {/* <Timer></Timer> */}
         <div className={styles.grid}>
             <button type= "button" className="button" ><a target="_blank" rel="noreferrer noopener" href= "https://one-eyed-bandit.gitbook.io/goat-money/">Docs</a> </button>
             <button className="button button2" disabled ><a target="_blank" rel="noreferrer noopener">DApp Soon</a></button>
         </div>
-        <a className= "animate__animated animate__jackInTheBox animate__delay-2s	2s" target="_blank" rel="noreferrer noopener" href= "https://linktr.ee/GoatMoney">Join our community!</a>
-        <div className= {styles.grid2}>
-          <h1 className={styles.icon}>
-            <button className= {styles.button}><a target="_blank" rel="noreferrer noopener" href= "https://t.me/+N-FoJXd372UzMDVh">
-              <Image 
-            src= {Tg} 
-            alt="Telegram" 
-            layout="responsive" 
-            className={styles.icon}>
-            </Image>
-            </a>
-            </button>
-          </h1>
-          <h1 className={styles.icon}>
-            <button className= {styles.button}><a target="_blank" rel="noreferrer noopener" href= "https://twitter.com/GoatMoneyToken?s=20">
-            <Image 
-              src= {Tw} 
-              alt="Twitter" 
-              layout="responsive" 
-              className={styles.icon}>
-              </Image>
-              </a>
-              </button>
-          </h1>
-          <h1 className={styles.icon}>
-            <button className= {styles.button} ><a target="_blank" rel="noreferrer noopener" href="https://discord.gg/BSkmZGQeM5">
-            <Image 
-              src= {Ds} 
-              alt="Discord" 
-              layout="responsive" 
-            className={styles.icon}>
-              </Image></a>
-              </button>
-          </h1>
+        <main className={styles.main2}>
+          <a className= "animate__animated animate__lightSpeedInLeft animate__delay-2s	2s" target="_blank" rel="noreferrer noopener" href= "https://linktr.ee/GoatMoney">Join our community!</a>
+            <div className= {styles.grid2}>
+              <h1 className={styles.icon}>
+                <button className= {styles.button}><a target="_blank" rel="noreferrer noopener" href= "https://t.me/+N-FoJXd372UzMDVh">
+                  <Image 
+                src= {Tg} 
+                alt="Telegram" 
+                layout="responsive" 
+                className={styles.icon}>
+                </Image>
+                </a>
+                </button>
+              </h1>
+              <h1 className={styles.icon}>
+                <button className= {styles.button}><a target="_blank" rel="noreferrer noopener" href= "https://twitter.com/GoatMoneyToken?s=20">
+                <Image 
+                  src= {Tw} 
+                  alt="Twitter" 
+                  layout="responsive" 
+                  className={styles.icon}>
+                  </Image>
+                  </a>
+                  </button>
+              </h1>
+              <h1 className={styles.icon}>
+                <button className= {styles.button} ><a target="_blank" rel="noreferrer noopener" href="https://discord.gg/BSkmZGQeM5">
+                <Image 
+                  src= {Ds} 
+                  alt="Discord" 
+                  layout="responsive" 
+                className={styles.icon}>
+                  </Image></a>
+                  </button>
+              </h1>
 
-        </div>
-
+            </div>
+          </main>
           <footer className={styles.footer}>
           <p className= {styles.ftext}>Bringed to you with love by Patagonia Labs</p>
             </footer>
       </main>
-  
+
       
     </div>
   )

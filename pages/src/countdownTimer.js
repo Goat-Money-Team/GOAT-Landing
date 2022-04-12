@@ -6,7 +6,7 @@ const ExpiredNotice = () => {
     <div className="expired-notice">
       <span>It's time anon!</span>
       <p>LFG</p>
-      <button className="button" ><a target="_blank" rel="noreferrer noopener" href= "https://one-eyed-bandit.gitbook.io/goat-money/">DApp Soon</a></button>
+      <button className="button" ><a target="_blank" rel="noreferrer noopener" href= "https://one-eyed-bandit.gitbook.io/goat-money/">DApp</a></button>
     </div>
   );
 };
