@@ -104,6 +104,8 @@ a {
 }
 .animate__lightSpeedInLeft{
   margin: 7rem ;
+  margin-bottom:2rem;
+  margin-top: 3rem;
   width: 100%;
   font-size: 2rem;
   height: 0.5rem;
@@ -119,7 +121,7 @@ a {
   background-color: #333333;
   border: 0.2rem solid #333333;
 }
-.button:hover:not([disabled]) {
+.button:hover:not(:disabled) {
   background-color:#E9E3E6;
   transition: 0.5s;
 }
